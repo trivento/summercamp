@@ -15,14 +15,14 @@ body {
 }
 
 .header {
-    background-image: url('/app/img/summer.jpg');
+    background-image: url('../img/summer.jpg');
 
     height : 500px;
 }
 
 
 .location {
-    background-image: url('/app/img/amersfoort.jpg');
+    background-image: url('../img/amersfoort.jpg');
 
     height : 600px;
 }
