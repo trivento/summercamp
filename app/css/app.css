@@ -1,0 +1,32 @@
+/* app css stylesheet */
+
+body {
+
+}
+
+
+.header {
+    background-image: url('/app/img/summer.jpg');
+
+    height : 500px;
+}
+
+
+.location {
+    background-image: url('/app/img/amersfoort.jpg');
+
+    height : 600px;
+}
+
+.content {
+    height:  300px;
+
+}
+
+
+.footer {
+    margin-top : 50px;
+    height:  300px;
+    background: #ffffff;
+
+}
