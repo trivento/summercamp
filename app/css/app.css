@@ -4,6 +4,15 @@ body {
 
 }
 
+.navbar {
+    margin-bottom: 0px;
+    min-height:  120px;
+}
+
+.navbar-nav {
+    margin-top: 30px;
+    margin-left: 50px;
+}
 
 .header {
     background-image: url('/app/img/summer.jpg');
