@@ -34,8 +34,14 @@ body {
 
 
 .footer {
+    padding-top: 50px;
     margin-top : 50px;
     height:  300px;
-    background: #ffffff;
+    background: #8e3e90;
+    color: #ffffff;
 
+}
+
+.footer a {
+    color : #ffffff;
 }
