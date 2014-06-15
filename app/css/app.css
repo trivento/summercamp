@@ -76,10 +76,15 @@ body {
 }
 
 .sprekers {
-
     margin-top : 50px;
-    min-height: 500px;
+    margin-bottom: 50px;
 
+}
+
+.bio {
+    margin-top : 50px;
+    margin-bottom: 50px;
+    font-size: 18px;
 
 }
 
@@ -96,7 +101,7 @@ body {
     cursor: pointer;
 }
 
-.rounded {
+.rounded{
     margin-top : 50px;
     text-decoration:none;
     border-radius: 30px 30px 30px 30px;
@@ -107,6 +112,26 @@ body {
     padding-left : 30px;
     padding-right : 30px;
     background-color : #ff0000;
+}
+
+.rounded-small{
+    margin-top : 5px;
+    text-decoration:none;
+    border-radius: 30px 30px 30px 30px;
+    font-weight: bold;
+    display:inline-block;
+    color : #f0f0f0;
+    padding : 5px;
+    padding-left : 20px;
+    padding-right : 20px;
+    background-color : #ff0000;
+    cursor : pointer
+
+}
+
+
+.description {
+    height: 50px;
 }
 
 .purple {

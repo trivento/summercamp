@@ -49,7 +49,9 @@
                   <div  class="text-center" >
                       <img  src="img/heiko.jpg" alt="Heiko Seeberger" class="img-circle center-block"/>
                       <h2>Heiko Seeberger</h2>
-                      <p>afadf adk</p>
+
+                      <p class="description" >afadf adk</p>
+                      <div class="rounded-small purple"  ng-click="toggleHeiko = !toggleHeiko; togglePawel = false;">info</div>
 
                   </div>
 
@@ -60,14 +62,9 @@
 
                   <div  class="text-center" >
                       <img  src="img/pawel.jpg" alt="Pawel Kozlowski" class="img-circle center-block" width="225"/>
-                      <h2>Pawel Kozlowski</h2>
-                      <p>Open source hacker, AngularJS book author, <br/>AngularUI lead developer</p>
-
-                      <!--Pawel Kozlowski has over 15 years of professional experience in web development and was fortunate enough to work with variety of web technologies, languages, and platforms. He is not afraid of hacking both at client side and server side and always searches for the most productive tools and processes.
-
-                      Pawel strongly believes in free, open source software. He has been very committed in the AngularJS project and also is very active in the AngularJS community. He also contributes to Angular UI – the companion suite to the AngularJS framework, where he focuses on the Twitter's Bootstrap directives for AngularJS.
-
-                      When not coding, Pawel spreads a good word about AngularJS at various conferences and meetups. -->
+                      <h2 >Pawel Kozlowski</h2>
+                      <p class="description">Open source hacker, AngularJS book author, <br/>AngularUI lead developer</p>
+                      <div class="rounded-small purple"  ng-click="togglePawel = !togglePawel; toggleHeiko =false;">info</div>
                   </div>
 
 
@@ -76,6 +73,39 @@
               </div>
 
           </div>
+          <div class="row bio" id="pawel" ng-show="togglePawel" >
+            <div class="col-lg-2">
+            </div>
+            <div class="col-lg-8 well">
+                <p>
+                    Pawel Kozlowski enjoys working on both back-end and front-end and has over 15 years of professional experience in software development.
+                    Currently working at Amadeus where he takes care of UI-related frameworks and tools. During his career he was fortunate enough to use multitude
+                    of technologies, programming languages and platforms but recently focuses on the front-end web development.
+                    He is committed to delivering quality software using all the possible help that we can get from automated testing practices.
+                </p>
+                <p>
+                    Pawel believes in free, open source software and is contributor to several front-end frameworks and tools (Karma-runner, AngularJS and others).
+                    He is the co-author of the book "Mastering Web Application Development with AngularJS". When not coding,
+                    you can find him speaking at various software development conferences.
+                </p>
+            </div>
+            <div class="col-lg-2">
+            </div>
+        </div>
+        <div class="row bio" id="heiko" ng-show="toggleHeiko" >
+            <div class="col-lg-2">
+            </div>
+            <div class="col-lg-8 well">
+                <p>
+                    Heiko
+                </p>
+                <p>
+
+                </p>
+            </div>
+            <div class="col-lg-2">
+            </div>
+        </div>
 
 
         <div class="row " >
