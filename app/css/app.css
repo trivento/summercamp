@@ -1,12 +1,16 @@
 /* app css stylesheet */
 
-body {
 
+body {
+    padding-top: 120px;
+    font-family: 'Cabin', Helvetica, Arial, sans-serif;
 }
+
 
 .navbar {
     margin-bottom: 0px;
     min-height:  120px;
+    background:rgba(255,255,255,0.9);
 }
 
 .navbar-nav {
@@ -14,21 +18,46 @@ body {
     margin-left: 50px;
 }
 
-.header {
-    background-image: url('../img/summer.jpg');
+.nav > li > a {
+    font-size: 20px;
 
-    height : 500px;
 }
 
+.header {
+   min-height : 750px;
+    background: url('../img/summer.jpg') no-repeat ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
 
-.location {
+.header h1 {
+    padding :0px;
+    padding-top: 10px;
+    margin: 0px;
+    font-size:  120px;
+    color : #af2d41;
+    font-family: 'Lobster', Georgia, Times, serif;
+}
+
+.header h2 {
+    padding :0px;
+    padding-top: 10px;
+    margin: 0px;
+    font-size:  50px;
+    color : #af2d41 ;
+    font-family: 'Cabin', Helvetica, Arial, sans-serif;
+}
+
+.location-image {
     background-image: url('../img/amersfoort.jpg');
 
     height : 600px;
 }
 
 .content {
-    height:  300px;
+    min-height:  300px;
 
 }
 
@@ -44,4 +73,50 @@ body {
 
 .footer a {
     color : #ffffff;
+}
+
+.sprekers {
+
+    margin-top : 50px;
+    min-height: 500px;
+
+
+}
+
+.programma ul li{
+    font-size : 24px;
+
+}
+
+.programma {
+    margin-bottom:  100px;
+}
+
+.scrollto {
+    cursor: pointer;
+}
+
+.rounded {
+    margin-top : 50px;
+    text-decoration:none;
+    border-radius: 30px 30px 30px 30px;
+    font-weight: bold;
+    display:inline-block;
+    color : #f0f0f0;
+    padding : 15px;
+    padding-left : 30px;
+    padding-right : 30px;
+    background-color : #ff0000;
+}
+
+.purple {
+    background-color: #8e3e90;
+}
+
+.yellow {
+    background-color: #e0dd00;
+}
+
+.orange {
+    background-color: #f39200;
 }

@@ -1,118 +1,203 @@
-<nav class="navbar navbar-default" role="navigation">
-    <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#"><img src="img/logo-trivento.gif" height="100"/></a>
-        </div>
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><img src="img/logo-trivento.gif" height="100"/></a>
+                </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Sprekers</a></li>
-                <li><a href="#">Workshops</a></li>
-                <li><a href="#">Programma</a></li>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a class="scrollto" ng-click="scrollTo('sprekers')">Sprekers</a></li>
+                        <li><a class="scrollto" ng-click="scrollTo('programma')">Programma</a></li>
+                        <li><a class="scrollto" ng-click="scrollTo('locatie')">Locatie</a></li>
 
-            </ul>
+                    </ul>
 
-        </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
-</nav>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
 
 
 
-      <div class="header">
-
+      <div class="header text-center">
+            <h1>Trivento Summercamp</h1>
+            <h2>Reactive with AngularJS & TypeSafe</h2>
+            <h2>vrijdag 29 augustus</h2>
       </div>
 
 
-      <div class="container content">
+
+    <div class="container content "  id="sprekers">
           <div class="row">
               <div class="col-lg-12">
-                  <h1>Sprekers</h1>
+                <h1 class="rounded purple">Sprekers</a></h1>
+              </div>
+          </div>
+
+          <div class="row sprekers" >
+              <div class="col-lg-2">
+              </div>
+              <div class="col-lg-4">
+
+                  <div  class="text-center" >
+                      <img  src="img/heiko.jpg" alt="Heiko Seeberger" class="img-circle center-block"/>
+                      <h2>Heiko Seeberger</h2>
+                      <p>afadf adk</p>
+
+                  </div>
 
 
               </div>
+
+              <div class="col-lg-4">
+
+                  <div  class="text-center" >
+                      <img  src="img/pawel.jpg" alt="Pawel Kozlowski" class="img-circle center-block" width="225"/>
+                      <h2>Pawel Kozlowski</h2>
+                      <p>Open source hacker, AngularJS book author, <br/>AngularUI lead developer</p>
+
+                      <!--Pawel Kozlowski has over 15 years of professional experience in web development and was fortunate enough to work with variety of web technologies, languages, and platforms. He is not afraid of hacking both at client side and server side and always searches for the most productive tools and processes.
+
+                      Pawel strongly believes in free, open source software. He has been very committed in the AngularJS project and also is very active in the AngularJS community. He also contributes to Angular UI – the companion suite to the AngularJS framework, where he focuses on the Twitter's Bootstrap directives for AngularJS.
+
+                      When not coding, Pawel spreads a good word about AngularJS at various conferences and meetups. -->
+                  </div>
+
+
+              </div>
+              <div class="col-lg-2">
+              </div>
+
           </div>
-      </div>
 
 
-      <div class="container content">
-        <div class="row">
-            <div class="col-lg-12">
-                <h1>Workshops</h1>
+        <div class="row " >
+            <div class="col-lg-2">
+            </div>
+            <div class="col-lg-4">
+
+                <div  class="text-center" >
+                    <img  src="img/heiko.jpg" alt="Jeroen Gordijn" class="img-circle center-block"/>
+                    <h2>Jeroen Gordijn</h2>
+                    <p>afadf adk</p>
+
+                </div>
 
 
             </div>
+
+            <div class="col-lg-4">
+
+                <div  class="text-center" >
+                    <img  src="img/henk.jpg" alt="Henk Jurriens" class="img-circle center-block" width="225"/>
+                    <h2>Henk Jurriens</h2>
+                    <p>AngularJS en Politie</p>
+
+                </div>
+
+
+            </div>
+            <div class="col-lg-2">
+            </div>
+
         </div>
-      </div>
+     </div>
 
 
-      <div class="container content">
-          <div class="row">
-              <div class="col-lg-12">
-                  <h1>Programma</h1>
 
 
-              </div>
-          </div>
-      </div>
+    <div id="programma"  class="container content">
+           <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="rounded yellow">Programma</h1>
+                </div>
+
+            </div>
+
+           <div class="row">
+               <div class="col-lg-2">
+               </div>
+
+                  <div class="col-lg-8 programma">
 
 
-      <div class="location">
+                      <h2>Vrijdag 29 augustus</h2>
 
-      </div>
-
-      <div class="footer">
-          <div class="row">
-              <div class="col-lg-2">
-              </div>
-              <div class="col-lg-3">
-                  <h4>Onze cellen</h4>
-
-                  <p>
-                  <a>Beheer – Intensief, innovatief beheer</a></br>
-                  <a>Core – No-nonsense applicatieontwikkeling en -onderhoud</a></br>
-                  <a>Fit! – Het complexe simpel maken</a></br>
-                  <a>Improve – Lean en Agile</a></br>
-                  <a>Spark! – Inspiratie, Innovatie</a></br>
-                  <a>Touch – Serious Enterprise Apps</a></br>
-                  </p>
-              </div>
-              <div class="col-lg-3">
-                  <h4>Over Trivento</h4>
-                  <p>
-                  De uitdaging van de professionals van Trivento is ambitieus. Geen idee is ons te gek.
-                  We helpen graag ideeën te verrijken en te vertalen naar werkende software.
-                  Uitgebreide kennis van lean management, agile scrum, mobile, inspiratietechnieken,
-                  Java, Scala, high productivity platforms en beheeromgevingen, in combinatie met een ondernemende mind set
-                  zorgen voor het beste resultaat. De klantvraag staat daarbij altijd centraal.
-                  </p>
-              </div>
-              <div class="col-lg-3">
-                  <h4>Full Circle Innovation</h4>
-                  <p>
-                      Trivento:</br>
-                      inspireert - verandering en vernieuwing</br>
-                      innoveert - gerealiseerde ideeën in korte tijd</br>
-                      implementeert - marktlancering en business integratie</br>
-                      presteert - rendement op investering</br>
-                      Lees verder over de Full Circle Innovatie.</br>
-                  </p>
-              </div>
-              <div class="col-lg-1">
-              </div>
-          </div>
-
-      </div>
+                      <ul>
+                          <li>12:30 Welkom</li>
+                          <li>13:00 Introduction Scala</li>
+                          <li>14:00 Pauze</li>
+                          <li>14:15 Iets met AngularJS</li>
+                          <li>15:30 AngularJS en de Politie</li>
+                          <li>16:30 Scala bla bla</li>
+                          <li>17:00 BBQ</li>
+                      </ul>
 
 
-</div>
+                  </div>
+
+               <div class="col-lg-2">
+               </div>
+
+
+           </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+
+                </div>
+            </div>
+
+        </div>
+
+
+    <div id="locatie"  class="container content">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="rounded orange">Locatie</h1>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-lg-2">
+                </div>
+
+                <div class="col-lg-8">
+
+                </div>
+
+                <div class="col-lg-2">
+                </div>
+
+
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+
+                </div>
+            </div>
+
+        </div>
+
+    <div class="location-image">
+        <div class="col-lg-12">
+
+
+        </div>
+    </div>
+
+
+
+        <ng-include src="'partials/footer.html'" />
 
 
 
