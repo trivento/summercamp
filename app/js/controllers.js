@@ -7,16 +7,26 @@ var phonecatControllers = angular.module('phonecatControllers', []);
 phonecatControllers.controller('PhoneListCtrl', ['$scope', 'Phone',
   function($scope, Phone) {
     $scope.togglePawel = false;
-    $scope.toggleHeiko = false;
+    $scope.toggleRoland = false;
+    $scope.toggleHenk = false;
+    $scope.toggleJeroen = false;
 
     $scope.phones = Phone.query();
     $scope.orderProp = 'age';
   }]);
 
+
+
 phonecatControllers.controller('PhoneListCtrl', function($scope, $location, $anchorScroll) {
     $scope.scrollTo = function(id) {
         $location.hash(id);
         $anchorScroll();
+    },
+    $scope.clear = function() {
+        $scope.togglePawel = false;
+        $scope.toggleRoland = false;
+        $scope.toggleHenk = false;
+        $scope.toggleJeroen = false;
     }
 });
 

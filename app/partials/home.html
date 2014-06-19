@@ -16,8 +16,13 @@
                     <ul class="nav navbar-nav">
                         <li><a class="scrollto" ng-click="scrollTo('sprekers')">Sprekers</a></li>
                         <li><a class="scrollto" ng-click="scrollTo('programma')">Programma</a></li>
+                        <li><a class="scrollto" ng-click="scrollTo('inschrijven')">Inschrijven</a></li>
                         <li><a class="scrollto" ng-click="scrollTo('locatie')">Locatie</a></li>
 
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><button type="button" class="btn btn-default btn-registreer">Registreren</button></li>
                     </ul>
 
                 </div><!-- /.navbar-collapse -->
@@ -33,8 +38,11 @@
       </div>
 
 
+   <div class="vspace" id="sprekers">
+    &nbsp;
+   </div>
 
-    <div class="container content "  id="sprekers">
+    <div class="container content "  >
           <div class="row">
               <div class="col-lg-12">
                 <h1 class="rounded purple">Sprekers</a></h1>
@@ -47,11 +55,11 @@
               <div class="col-lg-4">
 
                   <div  class="text-center" >
-                      <img  src="img/heiko.jpg" alt="Heiko Seeberger" class="img-circle center-block"/>
-                      <h2>Heiko Seeberger</h2>
+                      <img  src="img/roland.jpg" alt="Roland Kuhn" class="img-circle center-block img-bio" width="225"  />
+                      <h2>Roland Kuhn</h2>
 
-                      <p class="description" >afadf adk</p>
-                      <div class="rounded-small purple"  ng-click="toggleHeiko = !toggleHeiko; togglePawel = false;">info</div>
+                      <p class="description" >Roland is leading the Akka project at Typesafe and co-author of the Reactive Manifesto </p>
+                      <div class="rounded-small purple"  ng-click="toggleRoland = !toggleRoland; toggleJeroen=false;toggleHenk=false;togglePawel=false;">info</div>
 
                   </div>
 
@@ -61,18 +69,18 @@
               <div class="col-lg-4">
 
                   <div  class="text-center" >
-                      <img  src="img/pawel.jpg" alt="Pawel Kozlowski" class="img-circle center-block" width="225"/>
+                      <img  src="img/pawel.jpg" alt="Pawel Kozlowski" class="img-circle center-block" width="225" />
                       <h2 >Pawel Kozlowski</h2>
                       <p class="description">Open source hacker, AngularJS book author, <br/>AngularUI lead developer</p>
-                      <div class="rounded-small purple"  ng-click="togglePawel = !togglePawel; toggleHeiko =false;">info</div>
+                      <div class="rounded-small purple"  ng-click="togglePawel = !togglePawel; toggleJeroen=false;toggleRoland=false;toggleHenk=false;">info</div>
                   </div>
-
 
               </div>
               <div class="col-lg-2">
               </div>
 
           </div>
+
           <div class="row bio" id="pawel" ng-show="togglePawel" >
             <div class="col-lg-2">
             </div>
@@ -92,16 +100,16 @@
             <div class="col-lg-2">
             </div>
         </div>
-        <div class="row bio" id="heiko" ng-show="toggleHeiko" >
+
+        <div class="row bio" id="roland" ng-show="toggleRoland" >
             <div class="col-lg-2">
             </div>
             <div class="col-lg-8 well">
                 <p>
-                    Heiko
+                    Roland is leading the Akka project at Typesafe, a co-author of the Reactive Manifesto, co-teaching the Coursera course “Principles of Reactive Programming” and a passionate open-source hakker.
+                    He also hold a Dr. rer. nat. in particle physics from TU München and have worked in the space industry for several years. Roland spend most of my life in the central European timezone.
                 </p>
-                <p>
 
-                </p>
             </div>
             <div class="col-lg-2">
             </div>
@@ -114,9 +122,10 @@
             <div class="col-lg-4">
 
                 <div  class="text-center" >
-                    <img  src="img/heiko.jpg" alt="Jeroen Gordijn" class="img-circle center-block"/>
+                    <img  src="img/heiko.jpg" alt="Jeroen Gordijn" class="img-bio img-circle center-block"/>
                     <h2>Jeroen Gordijn</h2>
-                    <p>afadf adk</p>
+                    <p class="description">Open source hacker, AngularJS book author, <br/>AngularUI lead developer</p>
+                    <div class="rounded-small purple"  ng-click="toggleJeroen = !toggleJeroen; toggleHenk=false;toggleRoland=false;togglePawel=false;">info</div>
 
                 </div>
 
@@ -126,9 +135,10 @@
             <div class="col-lg-4">
 
                 <div  class="text-center" >
-                    <img  src="img/henk.jpg" alt="Henk Jurriens" class="img-circle center-block" width="225"/>
+                    <img  src="img/henk.jpg" alt="Henk Jurriens" class="img-bio img-circle center-block" width="225"/>
                     <h2>Henk Jurriens</h2>
-                    <p>AngularJS en Politie</p>
+                    <p class="description">Enthusiastic frontend developer at Trivento, specialties : AngularJS, Dart, Swift, Java</p>
+                    <div class="rounded-small purple"  ng-click="toggleHenk = !toggleHenk; toggleJeroen=false;toggleRoland=false;togglePawel=false;">info</div>
 
                 </div>
 
@@ -138,12 +148,60 @@
             </div>
 
         </div>
+
+        <div class="row bio" id="jeroen" ng-show="toggleJeroen" >
+            <div class="col-lg-2">
+            </div>
+            <div class="col-lg-8 well">
+                <p>
+                    Jeroen
+                </p>
+                <p>
+
+                </p>
+            </div>
+            <div class="col-lg-2">
+            </div>
+        </div>
+
+        <div class="row bio" id="henk" ng-show="toggleHenk" >
+            <div class="col-lg-2">
+            </div>
+            <div class="col-lg-8 well">
+                <p>
+                    Henk is an enthusiastic software developer at Trivento and has been working on different
+                    projects such as the Dutch Postcode Lottery, KPN. Currently Henk works
+                    for the Dutch Police.
+                </p>
+                <p>
+                    Henk also organises events like in 2010 a HTML5 Hackathon and recently
+                    a Flight Dart School Event in Aviodrome, a flight museum.
+
+                </p>
+
+                <p>
+                    When Henk is not working, he's just coding for fun, relaxing or
+                    running with his white shepard/labrador, called Ben Hur.
+                </p>
+
+                <p>
+                    Specialties: AngularJS, Angular Dart, Dart, Java, Android, Objective
+                    C, Swift, Lean, Scrum
+                </p>
+
+            </div>
+            <div class="col-lg-2">
+            </div>
+        </div>
      </div>
 
 
 
+    <div class="vspace" id="programma">
+        &nbsp;
+    </div>
 
-    <div id="programma"  class="container content">
+    <div  class="container content">
            <div class="row">
                 <div class="col-lg-12">
                     <h1 class="rounded yellow">Programma</h1>
@@ -162,11 +220,11 @@
 
                       <ul>
                           <li>12:30 Welkom</li>
-                          <li>13:00 Introduction Scala</li>
+                          <li>13:00 Introduction Scala, <em>Roland Kuhn</em></li>
                           <li>14:00 Pauze</li>
-                          <li>14:15 Iets met AngularJS</li>
-                          <li>15:30 AngularJS en de Politie</li>
-                          <li>16:30 Scala bla bla</li>
+                          <li>14:15 Iets met AngularJS, <em>Pawel Kozlowski</em></li>
+                          <li>15:30 AngularJS bij de Nationale Politie, <em>Henk Jurriens</em></li>
+                          <li>16:30 Scala bla bla, <em>Jeroen Gordijn</em></li>
                           <li>17:00 BBQ</li>
                       </ul>
 
@@ -187,8 +245,25 @@
 
         </div>
 
+    <div class="vspace" id="inschrijven">
+        &nbsp;
+    </div>
 
-    <div id="locatie"  class="container content">
+    <div  class="container content">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="rounded paars">Inschrijven</h1>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="vspace" id="locatie">
+        &nbsp;
+    </div>
+
+    <div  class="container content">
             <div class="row">
                 <div class="col-lg-12">
                     <h1 class="rounded orange">Locatie</h1>
@@ -196,15 +271,36 @@
 
             </div>
 
-            <div class="row">
-                <div class="col-lg-2">
+            <div class="row ">
+                <div class="col-lg-12 ">
+                    &nbsp;
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-lg-4">
+                    <h3>ZUIDPARK BV</h3>
+                    <p class="programma">
+                    Spaklerweg 52</br>
+                    1114 AE</br>
+                    Amsterdam-Duivendrecht</br>
+                    </p>
                 </div>
 
-                <div class="col-lg-8">
+                <div class="col-lg-4">
+                    <h3>Parkeren</h3>
+                    <p class="programma">
+                    Op Zuidpark is het betaald parkeren. Parkeerplaatsen op P1 en P2 zijn voldoende beschikbaar.
+                    Gasten kunnen een inrijkaart trekken bij de slagboom van P1 (uurtarief 3 euro per uur) of P2 (uurtarief 2 euro per uur)
+                    om binnen te rijden. De betaalautomaat bevindt zich binnen.
+                    </p>
 
                 </div>
 
-                <div class="col-lg-2">
+                <div class="col-lg-4">
+                    <h3>Kaart</h3>
+                    <a href="https://www.google.nl/maps/place/Spaklerweg+52/@52.3313464,4.9230337,15z/data=!4m2!3m1!1s0x47c60bce69378831:0xa85bfd23f6162326">
+                    <img border="0" class="img-responsive" src="//maps.googleapis.com/maps/api/staticmap?center=52.33135,4.92303&amp;zoom=13&amp;size=250x250&amp;maptype=roadmap&amp;markers=color:red%7Clabel:S%7C52.33135, 4.92303" alt="Zuidpark.nl">
+                    </a>
                 </div>
 
 
@@ -220,17 +316,8 @@
 
     <div class="location-image">
         <div class="col-lg-12">
-
-
         </div>
     </div>
-
-
-
         <ng-include src="'partials/footer.html'" />
-
-
-
-
   </div>
 </div>

@@ -24,8 +24,8 @@ body {
 }
 
 .header {
-   min-height : 750px;
-    background: url('../img/summer.jpg') no-repeat ;
+    height : 650px;
+    background: url('../img/summer1.jpg') no-repeat ;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -34,7 +34,7 @@ body {
 
 .header h1 {
     padding :0px;
-    padding-top: 10px;
+    padding-top: 20px;
     margin: 0px;
     font-size:  120px;
     color : #af2d41;
@@ -43,7 +43,7 @@ body {
 
 .header h2 {
     padding :0px;
-    padding-top: 10px;
+    padding-top: 20px;
     margin: 0px;
     font-size:  50px;
     color : #af2d41 ;
@@ -51,9 +51,12 @@ body {
 }
 
 .location-image {
-    background-image: url('../img/amersfoort.jpg');
-
-    height : 600px;
+    background-image: url('../img/zuidpark.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 600px;
 }
 
 .content {
@@ -64,8 +67,8 @@ body {
 
 .footer {
     padding-top: 50px;
-    margin-top : 50px;
-    height:  300px;
+    margin-top : 0px;
+    height:  400px;
     background: #8e3e90;
     color: #ffffff;
 
@@ -88,9 +91,13 @@ body {
 
 }
 
+
 .programma ul li{
     font-size : 24px;
+}
 
+p.programma {
+    font-size : 20px;
 }
 
 .programma {
@@ -144,4 +151,30 @@ body {
 
 .orange {
     background-color: #f39200;
+}
+
+
+.paars {
+
+    background-color:  #562f78;
+}
+
+
+.vspace {
+    height :100px;
+}
+
+
+
+.btn-registreer {
+    margin-right : 50px;
+    color : white;
+    background-color: #af2d41;
+    border : 0px;
+    font-size :20px;
+}
+
+.img-bio {
+    height : 225px;
+    width : 225px;
 }
