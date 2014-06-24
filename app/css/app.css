@@ -123,6 +123,7 @@ p.programma {
 
 .rounded-small{
     margin-top : 5px;
+    margin-bottom: 20px;
     text-decoration:none;
     border-radius: 30px 30px 30px 30px;
     font-weight: bold;
